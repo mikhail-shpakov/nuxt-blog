@@ -1,0 +1,27 @@
+@import "assets/styles/variables";
+
+html {
+  background-color: $html-background-color;
+  transition: $transition-default;
+
+  &,
+  body {
+    .page {
+      margin-top: $section-indent-mobile;
+
+      @media (min-width: $tablet) {
+        margin-top: $section-indent-desktop;
+      }
+    }
+
+    .section {
+      position: relative;
+      padding: 0 $section-side-padding;
+
+      .content {
+        max-width: $max-content;
+        margin: auto;
+      }
+    }
+  }
+}

@@ -1,0 +1,100 @@
+@import "assets/styles/variables";
+
+html,
+body {
+  font-family: $font-family-regular;
+  color: $text-primary;
+
+  .h1 {
+    font-family: $font-family-bold;
+    font-weight: bold;
+    font-size: $font-size-title-1-mobile;
+    line-height: 120%;
+
+    @media (min-width: $tablet) {
+      font-size: $font-size-title-1;
+    }
+  }
+
+  .body1.medium {
+    font-family: $font-family-medium;
+    font-weight: 500;
+    font-size: $font-size-body-1-mobile;
+    line-height: 1.5;
+
+    @media (min-width: $tablet) {
+      font-size: $font-size-body-1;
+    }
+  }
+
+  .body2 {
+    &.medium {
+      @extend .body1.medium;
+
+      font-size: $font-size-body-2-mobile;
+
+      @media (min-width: $tablet) {
+        font-size: $font-size-body-2;
+      }
+    }
+
+    &.regular {
+      font-family: $font-family-regular;
+      font-weight: normal;
+      font-size: $font-size-body-2-mobile;
+      line-height: 1.5;
+
+      @media (min-width: $tablet) {
+        font-size: $font-size-body-2;
+      }
+    }
+  }
+
+  .body3 {
+    &.medium {
+      @extend .body2.medium;
+
+      font-size: $font-size-body-3-mobile;
+
+      @media (min-width: $tablet) {
+        font-size: $font-size-body-3;
+      }
+    }
+
+    &.regular {
+      @extend .body2.regular;
+
+      font-size: $font-size-body-3-mobile;
+
+      @media (min-width: $tablet) {
+        font-size: $font-size-body-3;
+      }
+    }
+  }
+
+  a {
+    @extend .body2.medium;
+
+    text-decoration: none;
+    font-family: $font-family-medium;
+    transition: $transition-default;
+    cursor: pointer;
+    display: table;
+
+    &.primary {
+      color: $primary;
+
+      &:hover {
+        color: $text-primary;
+      }
+    }
+
+    &.secondary {
+      color: $text-primary;
+
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@import "assets/styles/variables";
+
+// css animations when switching between pages
+.page-enter-active,
+.page-leave-active {
+  transition: $transition-default;
+}
+
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+  transform-origin: 50% 50%;
+}

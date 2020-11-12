@@ -1,0 +1,42 @@
+// breakpoints
+$mobile:                            768px;  // up to
+$tablet:                            769px;  // from
+$max-content:                       1128px; // from
+
+// indents
+$section-side-padding:              24px;
+$section-indent-mobile:             64px;
+$section-indent-desktop:            80px;
+
+// fonts
+$font-family-regular:              'Rubik-Regular', arial, sans-serif;
+$font-family-medium:               'Rubik-Medium', arial, sans-serif;
+$font-family-bold:                 'Rubik-Bold', arial, sans-serif;
+
+// fonts size
+$font-size-title-1:                 48px;
+$font-size-title-1-mobile:          28px;
+$font-size-body-1:                  22px;
+$font-size-body-1-mobile:           18px;
+$font-size-body-2:                  18px;
+$font-size-body-2-mobile:           16px;
+$font-size-body-3:                  16px;
+$font-size-body-3-mobile:           14px;
+
+// colors
+$text-primary:                      rgb(22, 22, 23);
+$text-secondary:                    rgb(110, 109, 122);
+$line-color:                        rgb(231, 231, 233);
+$background-color:                  rgb(243, 243, 244);
+$html-background-color:             rgb(255, 255, 255);
+$primary:                           rgb(102, 93, 245);
+$white:                             rgb(255, 255, 255);
+
+// transition
+$transition-time-default:           210ms;
+$transition-default:                all $transition-time-default ease-in-out;
+
+// other
+$line-default:                      1px solid $line-color;
+$box-shadow-default:                0 25px 60px rgba(0, 0, 0, 0.12);
+$border-radius-primary:             16px;
