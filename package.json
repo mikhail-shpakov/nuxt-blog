@@ -1,6 +1,24 @@
 {
   "name": "nuxt-blog",
-  "version": "1.0.0",
+  "version": "0.1.0",
+  "description": "Nuxt.js blog by Mikhail Shpakov",
+  "author": "Mikhail Shpakov <mikhail@shpakov.dev> (https://shpakov.dev/)",
+  "bugs": {
+    "url": "https://github.com/mikhail-shpakov/nuxt-blog/issues"
+  },
+  "homepage": "https://github.com/mikhail-shpakov/nuxt-blog",
+  "keywords": [
+    "Nuxt",
+    "Pug",
+    "Scss",
+    "Typescript",
+    "Hostman"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mikhail-shpakov/nuxt-blog.git"
+  },
   "private": true,
   "scripts": {
     "dev": "nuxt-ts",
