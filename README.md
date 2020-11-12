@@ -12,9 +12,9 @@ Modern approach to blog development with Nuxt.js with attention to detail.
 
 :tv: [Figma](https://www.figma.com/file/s1B9t0XOmRhtNY8daezIs7/Nuxt.js-blog)
 
-:wrench: [Description on dev.to]()
+:green_book: [Description on dev.to](https://github.com/mikhail-shpakov/nuxt-blog)
 
-:wrench: [Selected options nuxt-create-app](#options)
+:file_folder: [Selected options nuxt-create-app](#options)
 
 :wrench: [Build Setup](#dev)
 
