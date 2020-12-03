@@ -5,6 +5,8 @@
     subtitle="The best blog you can find on the global internet"
   )
 
+  app-options
+
   post-list
 </template>
 
