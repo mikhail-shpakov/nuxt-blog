@@ -6,7 +6,7 @@ section.section
         src="~/assets/icons/list.svg"
         alt="icon-list"
       )
-      | Total {{ posts.length }} posts
+      | {{ $t('home.postCount') + posts.length }}
 
     .pl__items
       post-card(
@@ -19,13 +19,18 @@ section.section
 <script lang="ts">
 import Vue from 'vue'
 import posts from '~/content/posts'
+import { Post } from '~/content/Post'
 
 export default Vue.extend({
   name: 'PostList',
 
-  data: () => ({
-    posts,
-  }),
+  computed: {
+    posts(): Post[] {
+      const { locale } = (this as any).$i18n
+
+      return posts[locale as 'en' | 'ru']
+    },
+  },
 })
 </script>
 

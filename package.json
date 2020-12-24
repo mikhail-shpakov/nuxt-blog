@@ -45,6 +45,7 @@
     "@nuxtjs/style-resources": "^1.0.0",
     "core-js": "^3.6.5",
     "nuxt": "^2.14.6",
+    "nuxt-i18n": "^6.16.0",
     "reset-css": "^5.0.1"
   },
   "devDependencies": {

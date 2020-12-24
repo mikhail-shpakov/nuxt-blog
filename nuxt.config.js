@@ -1,3 +1,5 @@
+import { i18n } from './locales/i18n-nuxt-config'
+
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
@@ -43,7 +45,11 @@ export default {
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
-  modules: ['@nuxtjs/style-resources', '@nuxtjs/markdownit'],
+  modules: [
+    '@nuxtjs/style-resources',
+    '@nuxtjs/markdownit',
+    ['nuxt-i18n', i18n],
+  ],
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},

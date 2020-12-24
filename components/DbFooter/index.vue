@@ -4,7 +4,7 @@ section.section
     .footer
       a.secondary(
         href="mailto:example@mail.com?subject=Nuxt blog"
-      ) Contact us
+      ) {{ $t('footer.feedback') }}
       p.footer__copyright(
         class="body3 regular"
       ) {{ copyright }}
@@ -19,7 +19,7 @@ export default Vue.extend({
   computed: {
     copyright(): string {
       const year = new Date().getUTCFullYear()
-      return `© ${year} · All rights reserved`
+      return `© ${year} · ${(this as any).$t('footer.copyright')}`
     },
   },
 })

@@ -1,8 +1,8 @@
 <template lang="pug">
 .page
   section-header(
-    title="Nuxt blog"
-    subtitle="The best blog you can find on the global internet"
+    :title="$t('home.title')"
+    :subtitle="$t('home.subtitle')"
   )
 
   app-options
