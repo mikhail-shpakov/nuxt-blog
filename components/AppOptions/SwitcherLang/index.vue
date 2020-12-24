@@ -22,12 +22,12 @@ export default Vue.extend({
   }),
 
   created() {
-    this.selected = this.$i18n.locale
+    this.selected = (this as any).$i18n.locale
   },
 
   methods: {
     changeLocale() {
-      const switchPath = this.switchLocalePath(this.selected)
+      const switchPath = (this as any).switchLocalePath(this.selected)
       this.$router.push(switchPath)
     },
   },
