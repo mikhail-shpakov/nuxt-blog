@@ -2,6 +2,7 @@
 section.section
   .content
     .app-options
+      switcher-lang
       switcher-color-mode
 </template>
 

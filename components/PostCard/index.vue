@@ -25,7 +25,7 @@ export default Vue.extend({
 
   computed: {
     pageUrl(): string {
-      return `/post/${this.post.id}`
+      return (this as any).localePath(`/post/${this.post.id}`)
     },
   },
 })

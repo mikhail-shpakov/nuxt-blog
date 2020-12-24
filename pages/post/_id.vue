@@ -26,7 +26,11 @@ export default Vue.extend({
       return Number(this.$route.params.id)
     },
     currentPost(): Post | undefined {
-      return posts.find(({ id }) => id === this.currentId)
+      const { locale } = (this as any).$i18n
+
+      return posts[locale as 'en' | 'ru'].find(
+        (post: Post) => post.id === this.currentId
+      )
     },
   },
 })

@@ -2,14 +2,14 @@
 section.section
   .content
     nuxt-link.lth__link(
-      to="/"
       class="primary"
+      :to="localePath('/')"
     )
       img.lth__link-icon(
         src="~/assets/icons/home.svg"
         alt="icon-home"
       )
-      | Home
+      | {{ $t('post.linkHome') }}
 </template>
 
 <script lang="ts">
